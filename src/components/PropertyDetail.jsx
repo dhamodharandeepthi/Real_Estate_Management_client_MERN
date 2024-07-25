@@ -28,7 +28,7 @@ const PropertyList = () => {
     const deleteProperty = async (propertyId) => {
         try {
             await axios.delete(`https://real-estate-management-server-mern.onrender.com/api/properties/${propertyId}`);
-            // alert("Successfully deleted");
+            alert("Successfully deleted");
             setProperties(properties.filter(property => property._id !== propertyId));
         } catch (err) {
             setError('Error deleting property.');

@@ -19,10 +19,10 @@ const Login = () => {
         e.preventDefault();
         try {
             await login(email, password);
-            // alert("Login successful")
+            alert("Login successful")
             navigate('/properties/add');  // Redirect to the PropertyForm page
         } catch (err) {
-            // alert("Please enter valid email or password")
+            alert("Please enter valid email or password")
             console.error(err.message);
         }
     };

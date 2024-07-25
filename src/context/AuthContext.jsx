@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }) => {
         delete axios.defaults.headers.common['x-auth-token'];
         setIsAuthenticated(false);
         setUser(null);
-        // alert("log out successfully")
+        alert("log out successfully")
     };
 
     return (

@@ -20,10 +20,10 @@ const Register = () => {
         try {
             await axios.post('https://real-estate-management-server-mern.onrender.com/api/auth/register', formData);
             // Redirect to login page after successful registration
-            // alert("Successfully registered");
+            alert("Successfully registered");
             navigate('/login');
         } catch (err) {
-            // alert("Please enter valid input");
+            alert("Already user or enter valid input");
             console.error(err.message);
         }
     };

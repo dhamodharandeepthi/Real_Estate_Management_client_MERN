@@ -34,10 +34,10 @@ const PropertyForm = () => {
         e.preventDefault();
         if (id) {
             await axios.put(`https://real-estate-management-server-mern.onrender.com/api/properties/${id}`, formData);
-            // alert("Successfully updated");
+            alert("Successfully updated");
         } else {
             await axios.post(`https://real-estate-management-server-mern.onrender.com/api/properties`, formData);
-            // alert("property added successfully")
+            alert("property added successfully")
         }
         navigate('/properties');
     };
