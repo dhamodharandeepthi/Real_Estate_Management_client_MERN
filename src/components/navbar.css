@@ -1,0 +1,25 @@
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: tomato !important;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background: #4e4c4ce9 !important;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin: 0 10px;
+    color:rgb(218, 209, 209) !important;
+}
+
+.nav-link:hover {
+    color:rgb(255, 255, 255) !important;
+}
+
+
+
+
